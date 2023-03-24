@@ -1,0 +1,80 @@
+header {
+    width: 100vw;
+    height: 75px;
+    background-image: url(../images/nvbkg.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.menu-toogle {
+    border: none;
+    background: none;
+    color: #ffff;
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+header nav {
+    position: absolute;
+    top: 77px;
+    background-image: url(../images/Navegacion.JPG);    
+    background-size:cover;
+    width: 0;
+    height: 40vh;   
+    right: 0;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.mostrar {
+    width: 80vw;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 32%;
+    color: #F49638; /* color de los puntos*/
+    margin-top: 50px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-toogle {
+        display: none;
+    }
+    header nav {
+        width: 80%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: none;
+        background-color: #F49635;
+    }
+    header nav ul {
+        flex-direction: row;
+        list-style: none;
+        margin-top: 0;
+        margin-right: 25px;
+    }
+}
